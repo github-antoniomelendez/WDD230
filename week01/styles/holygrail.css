@@ -9,7 +9,7 @@ body {
 }
   
 header {
-    background: blueviolet;
+    background: lightpink;
     padding: 2rem;
     grid-column: 1 / 3;
 }
