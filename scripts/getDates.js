@@ -1,4 +1,5 @@
 const today1 = document.querySelector('#today1');
+
 const options = {
     month: "short",
     day: "numeric",
@@ -25,6 +26,20 @@ if (
   alert("This page has changed!");
 }
 
+const year1 = document.querySelector('#year1');
+
+const options1 = {
+  year: "numeric"
+};
+
+year1.innerHTML = new Date().toLocaleDateString("en-US", options1);
+
+const pattern1 = /last_modif\s*=\s*([^;]*)/;
+
+if (
+  Date.parse(document.lastModified) >
+  (parseFloat(document.cookie.match(pattern1)?.[1]) || 0)
+) 
 
 function getCelsius(fahrenheit) {
 	return (fahrenheit - 32) * (5/9);
