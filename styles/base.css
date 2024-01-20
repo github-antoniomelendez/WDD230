@@ -19,7 +19,7 @@ header {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 footer {
@@ -86,7 +86,8 @@ nav ul {
 
 nav a {
     display: block;
-    color: white;
+    font-size: 2rem;
+    color: black;
     text-align: center;
     padding: 1rem;
     text-decoration: none;
