@@ -23,6 +23,22 @@ modeButton.addEventListener("click", () => {
 	}
 });
 
+//code for calculating the number of visits to the page
+
+const visitsDisplay = document.querySelector(".visits");
+
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+if (numVisits !== 0) {
+	visitsDisplay.textContent = numVisits;
+} else {
+	visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+}
+
+numVisits++;
+
+localStorage.setItem("numVisits-ls", numVisits);
+
 // footer and last modification code
 const today1 = document.querySelector('#today1');
 

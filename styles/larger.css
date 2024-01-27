@@ -1,6 +1,10 @@
 @media screen and (min-width: 500px)
 {
 
+    .hero span {
+        font-size: 2rem;
+    }
+
     .parent {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -30,4 +34,4 @@
 		display: block;
 		flex: 1 1 100%;
 	}
-}   
+} 

@@ -10,6 +10,31 @@ body {
     font-weight: 300;
 }
 
+.hero {
+    position: relative;
+}
+
+.hero picture {
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero span {
+    position: absolute;
+    top: 10%;
+    left: 10px;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+}
+
 /* mobile *****************************/
 header {
     background-color: black;
@@ -59,7 +84,7 @@ footer {
     text-align: center;
 }
 
-header, main {
+header, main, iframe {
     max-width: 100%;
     margin: 0 auto;
 }
