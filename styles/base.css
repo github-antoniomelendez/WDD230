@@ -24,8 +24,9 @@ body {
     display: block;
 }
 
-.hero span {
+.herolabel {
     position: absolute;
+    font-size: 1.5rem;
     top: 10%;
     left: 10px;
     width: 40%;
@@ -33,6 +34,13 @@ body {
     border-radius: 10px;
     padding: 1rem;
     text-align: center;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+
 }
 
 /* mobile *****************************/

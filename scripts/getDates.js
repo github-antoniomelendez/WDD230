@@ -81,11 +81,11 @@ const pattern1 = /last_modif\s*=\s*([^;]*)/;
 if (
   Date.parse(document.lastModified) >
   (parseFloat(document.cookie.match(pattern1)?.[1]) || 0)
-) 
+);
 
-function getCelsius(fahrenheit) {
+/*function getCelsius(fahrenheit) {
 	return (fahrenheit - 32) * (5/9);
 }
 
-document.querySelector('#temp1').value = `${getCelsius(53).toFixed(1)}°C`;
+document.querySelector('#temp1').value = `${getCelsius(53).toFixed(1)}°C`;*/
 
