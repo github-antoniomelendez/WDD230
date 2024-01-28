@@ -16,12 +16,12 @@ body {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 /* mobile *****************************/
 header {
-    background-color: black;
+    background-color: rgb(33, 46, 39);
     max-width: 100%;
     color: white;
     display: flex;
@@ -32,7 +32,7 @@ header {
 }
 
 footer {
-    background-color: black;
+    background-color: rgb(33, 46, 39);
     max-width: 100%;
     color: white;
     text-align: center;
@@ -45,16 +45,17 @@ footer {
 
 .parent section {
     border: 2px solid black;
-    background-color: lightskyblue;
+    background-color: white;
     border-radius: 10px;
     overflow: hidden;
     margin: 1rem 0;
 }
 
 .parent h2 {
-    background-color: lightblue;
+    background-color: rgb(33, 46, 39);
+    border-bottom: 3px solid rgb(204, 21, 21);
     border-radius: 5px;
-    color: black;
+    color: white;
     display: block;
     text-align: center;
     padding: 1rem 0;
@@ -62,6 +63,82 @@ footer {
 
 .parent ul {
     padding: 0px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sidebar {
+    margin: 1rem 2vw;
+    height: 100%;
+    width: 300px;
+    position: relative;
+    z-index: 1;
+    padding-top: 20px;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+}
+
+.sidebar section {
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+
+.sidebar h2 {
+    background-color: rgb(33, 46, 39);
+    border-bottom: 3px solid rgb(204, 21, 21);
+    border-radius: 5px;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.sidebar ul {
+    padding: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    place-items: center;
+    margin: 1rem 2vw;
+    height: 100%;
+    width: 500px;
+    position: relative;
+    z-index: 1;
+    padding-top: 20px;
+}
+
+.grid-item1 {
+    box-shadow: 0 0 50px #333;
+}
+
+.grid-item2 {
+    border-radius: 15px 150px;
+}
+
+.grid-item3 {
+    opacity: .5;
+}
+
+.grid-item4 {
+    filter: saturate(10%);
+}
+
+.grid-item5 {
+    filter: blur(1px) grayscale(80%);
+}
+
+.grid-item6 {
+    mix-blend-mode: darken;
 }
 
 .card2 {
@@ -76,13 +153,13 @@ header, main {
 h1 {
     font-size: 1.5rem;
     border-bottom-style: solid;
-    border-color: lightskyblue;
+    border-color: rgb(204, 21, 21);
     text-align: center;
     padding: 20px;
 }
 
 nav {
-    background-color: lightskyblue;
+    background-color: rgb(33, 46, 39);
     font-size: 1.5rem;
     max-width: 100%;
     justify-content: center;
@@ -96,7 +173,7 @@ nav ul {
 nav a {
     display: block;
     font-size: 2rem;
-    color: black;
+    color: white;
     text-align: center;
     padding: 1rem;
     text-decoration: none;
@@ -131,10 +208,11 @@ nav .active {
 }
 .navigation {
 	display: flex;
+    border-radius: 10px;
 	flex-direction: column;
 	list-style: none;
-	background-color: lightskyblue;
-	color: #fff;
+	background-color: white;
+	color: white;
 }
 .navigation li {
 	display: none;
@@ -144,10 +222,11 @@ nav .active {
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
-	color: #fff;
+	color: black;
 }
 .navigation li a:hover {
 	background-color: #bbb;
+    border-radius: 10px;
 	color: #333;
 	font-weight: 700;
 }
