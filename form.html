@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antonio Melendez-WDD 230-Web Frontend Development</title>
+    <meta
+      name="description"
+      content="Antonio Melendez-WDD 230-Web Frontend Development-course assignment portal"
+    />
+    <meta
+      name="author"
+      content="Antonio Melendez-WDD 230-Web Frontend Development"
+    />
+
+    <meta
+      property="og:title"
+      content="Antonio Melendez-WDD 230-Web Frontend Development"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://github-antoniomelendez.github.io/wdd230/"
+    />
+    <meta
+      property="og:image"
+      content="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Plaza_de_Armas_de_Torre%C3%B3n.jpg/274px-Plaza_de_Armas_de_Torre%C3%B3n.jpg"
+    />
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link href="styles/base.css" rel="stylesheet" />
+    <link href="styles/larger.css" rel="stylesheet" />
+    <link href="styles/form.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="images/profile.webp"
+        alt="Antonio Melendez Profile"
+        width="75"
+        height="100"
+      />
+      <span>Antonio Melendez</span>
+    </header>
+    <nav>
+      <button id="menu"></button>
+      <ul class="navigation">
+        <li><a href="index.html" title="Home">Home</a></li>
+        <li><a href="chamber/index.html" title="Chamber">Chamber</a></li>
+        <li><a href="#" title="Site">Site Plan</a></li>
+        <li><a href="form.html" title="Form" class="active">Form</a></li>
+      </ul>
+    </nav>
+    <main>
+        <h1>Web Form</h1>
+            <form method="get" action="record.html">
+                <fieldset>
+                    <legend>Student Information</legend>
+                    <label class="top">Username* <input type="text" id="username" name="username" required placeholder="Please enter your full name"></label>
+                    <label class="top">Password* <input type="text" id="password" name="password" pattern="[A-Za-z-9]{8,}" required placeholder="At least eight characters long"></label>
+                    <label class="top">Re-enter Your Password* <input type="text" id="password2" name="password2" pattern="[A-Za-z-9]{8,}" required placeholder="Same as password"></label>
+                    <label class="top">Email* <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="Please enter a valid email address: someone@byui.edu" required></label>
+                    <label class="top">Page Rating <input type="range" id="rating" name="rating" min="1" max="10" value="0" step="1" list="rangevalues"></label>
+                    <datalist id="rangevalues">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+                </fieldset>
+                <input type="submit" value="Send My Student Information" class="submitBtn">
+            </form>
+    </main>
+    <footer>
+      <p>&#169;2024</p>
+      <p id="year1"></p>
+      <p>Antonio Melendez</p>
+      <p>Mexico &#127474; &#127485;</p>
+      <div id="today1" class="step-reset step"></div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/formvalidation.js"></script>
+  </body>
+</html>
