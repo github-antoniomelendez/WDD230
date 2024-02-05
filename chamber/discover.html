@@ -1,153 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Torreon Chamber of Commerce</title>
-        <meta name ="description" content="Torreon Chamber of Commerce, because it is for the city of Torreon, Mexico.">
-        <meta name="author" content="Antonio Melendez-WDD 230-Web Frontend Development">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Torreon Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="Torreon Chamber of Commerce, because it is for the city of Torreon, Mexico."
+    />
+    <meta
+      name="author"
+      content="Antonio Melendez-WDD 230-Web Frontend Development"
+    />
 
-        <meta
-        property="og:title"
-        content="Antonio Melendez-WDD 230-Web Frontend Development"
-        />
-        <meta property="og:type" content="website" />
-        <meta
-        property="og:url"
-        content="https://github-antoniomelendez.github.io/wdd230/"
-        />
-        <meta
-        property="og:image"
-        content="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Plaza_de_Armas_de_Torre%C3%B3n.jpg/274px-Plaza_de_Armas_de_Torre%C3%B3n.jpg"
-        />
+    <meta
+      property="og:title"
+      content="Antonio Melendez-WDD 230-Web Frontend Development"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://github-antoniomelendez.github.io/wdd230/"
+    />
+    <meta
+      property="og:image"
+      content="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Plaza_de_Armas_de_Torre%C3%B3n.jpg/274px-Plaza_de_Armas_de_Torre%C3%B3n.jpg"
+    />
 
-        <link rel="stylesheet" href="styles/normalize.css" />
-        <link href="styles/base.css" rel="stylesheet" />
-        <link href="styles/larger.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link href="styles/base.css" rel="stylesheet" />
+    <link href="styles/larger.css" rel="stylesheet" />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="icon" href="../favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="images/torreon-logo.png"
+        alt="Torreon Chamber of Commerce"
+        width="200"
+        height="100"
+      />
+      <span>Torreon Chamber of Commerce</span>
+    </header>
+    <nav>
+      <button id="menu"></button>
+      <ul class="navigation">
+        <li><a href="index.html" title="Home">Home</a></li>
+        <li>
+          <a href="discover.html" title="Discover" class="active">Discover</a>
+        </li>
+        <li><a href="#" title="Directory">Directory</a></li>
+        <li><a href="join.html" title="Join">Join</a></li>
+      </ul>
+    </nav>
+    <div class="hero-image">
+      <img
+        class="torreon"
+        alt="torreon"
+        src="images/torreon1.jpg"
+        width="960"
+        height="480"
+      />
+      <h1>Discover Torreon</h1>
+    </div>
+    <maind>
+      <div class="sidebar">
+        <section class="card">
+          <h2>Population</h2>
+          <ul>
+            <li>
+              The total population of Torreón in 2020 was 720,848 inhabitants,
+              with 51.2% woman, and 48.8% men.
+            </li>
 
-        <link rel="icon" href="../favicon.ico" />
-    </head>
-    <body>
-        <header>
-            <img src="images/torreon-logo.png" alt="Torreon Chamber of Commerce" width="200" height="100">
-            <span>Torreon Chamber of Commerce</span>
-        </header>
-        <nav>
-            <button id="menu"></button>
-            <ul class="navigation">
-                <li><a href="index.html" title="Home" >Home</a></li>
-                <li><a href="discover.html" title="Discover" class="active">Discover</a></li>
-                <li><a href="#" title="Directory">Directory</a></li>
-                <li><a href="#" title="Join">Join</a></li>
-            </ul>
-        </nav>
-        <div class="hero-image">
-            <img class="torreon" alt="torreon" src="images/torreon1.jpg">
-            <h1>Discover Torreon</h1>
-        </div>
-        <main>
-            <div class="sidebar">
-                <section class="card">
-                    <h2>Population</h2>
-                    <ul>
-                        <li>The total population of Torreón in 2020 was 720,848 inhabitants, with 51.2% woman, and 48.8% men.</li>
-    
-                        <li> The age ranges that concentrated the largest population were 15 to 19 years (60,741 inhabitants), 20 to 24 years (60,416 inhabitants), and 10 to 14 years (59,758 inhabitants). Among them they concentrated 25.1% of the total population.</li>
-                    </ul>
-                </section>
-                <section class="card">
-                    <h2>Events</h2>
-                    <ul>
-                        <li>Feb. 03 - Organic Garden</li>
-                        <li>Feb. 24 - Los Temerarios Concert</li>
-                        <li>Mar. 01-04 - LaLa Marathon</li>
-                        <li>Mar. 02- Candlelight: Vivaldi</li>
-                        <li>Sep. 21 - Luis Miguel Tour</li>
-                    </ul>
-                </section>
-                <section class="card">
-                    <h2>Economy</h2>
-                    <ul>
-                        <li>In november 2023, international sales of Torreón were US$338M and a total of US$257M in international purchases. For this month the net trade balance of Torreón was of US$80.9M.</li>
-                        <li>In the third quarter of 2023, the labor participation rate in Coahuila de Zaragoza was 60.7%, which implied a decrease of 1.38 percentage points compared to the previous quarter (62.1%).
-                        The unemployment rate was 3.88 % (59.2k people), which implied an increase of 0.17 percentage points compared to the previous quarter (3.7%).</li>
-                    </ul>
-                </section>
-                <section class="card">
-                    <h2>Number of Visits</h2>
-                    <li class="visits"></li>
-                </section>
-            </div>
-            <div class="container">
-                <picture>
-                    <img class="grid-item1"
-                      src="images/torreon0.webp"
-                      alt="Torreon1"
-                      loading="lazy"
-                      width="400"
-                      height="250"
-                    />
-                </picture>
-                <picture>
-                    <img class="grid-item2"
-                      src="images/torreon2.webp"
-                      alt="Torreon2"
-                      loading="lazy"
-                      width="400"
-                      height="250"
-                    />
-                </picture>
-                <picture>
-                    <img class="grid-item3"
-                      src="images/torreon3.webp"
-                      alt="Torreon3"
-                      loading="lazy"
-                      width="400"
-                      height="250"
-                    />
-                </picture>
-                <picture>
-                    <img class="grid-item4"
-                      src="images/torreon0.webp"
-                      alt="Torreon4"
-                      loading="lazy"
-                      width="400"
-                      height="250"
-                    />
-                </picture>
-                <picture>
-                    <img class="grid-item5"
-                      src="images/torreon2.webp"
-                      alt="Torreon5"
-                      loading="lazy"
-                      width="400"
-                      height="250"
-                    />
-                </picture>
-                <picture>
-                    <img class="grid-item6"
-                      src="images/torreon3.webp"
-                      alt="Torreon6"
-                      loading="lazy"
-                      width="400"
-                      height="250"
-                    />
-                </picture>
-            </div>
-        </main>
-        <footer>
-            <p> &#169;</p>
-            <p id="year1"></p>
-            <p>Antonio Melendez- WDD230 Project</p>
-            <p>Mexico &#127474; &#127485;</p>
-            <strong>Last Modified:</strong>
-            <div id="today1" class="step-reset step"></div>
-        </footer>
-        <script src="scripts/chamber.js"></script>
-    </body>
+            <li>
+              The age ranges that concentrated the largest population were 15 to
+              19 years (60,741 inhabitants), 20 to 24 years (60,416
+              inhabitants), and 10 to 14 years (59,758 inhabitants). Among them
+              they concentrated 25.1% of the total population.
+            </li>
+          </ul>
+        </section>
+        <section class="card">
+          <h2>Events</h2>
+          <ul>
+            <li>Feb. 03 - Organic Garden</li>
+            <li>Feb. 24 - Los Temerarios Concert</li>
+            <li>Mar. 01-04 - LaLa Marathon</li>
+            <li>Mar. 02- Candlelight: Vivaldi</li>
+            <li>Sep. 21 - Luis Miguel Tour</li>
+          </ul>
+        </section>
+        <section class="card">
+          <h2>Economy</h2>
+          <ul>
+            <li>
+              In november 2023, international sales of Torreón were US$338M and
+              a total of US$257M in international purchases. For this month the
+              net trade balance of Torreón was of US$80.9M.
+            </li>
+            <li>
+              In the third quarter of 2023, the labor participation rate in
+              Coahuila de Zaragoza was 60.7%, which implied a decrease of 1.38
+              percentage points compared to the previous quarter (62.1%). The
+              unemployment rate was 3.88 % (59.2k people), which implied an
+              increase of 0.17 percentage points compared to the previous
+              quarter (3.7%).
+            </li>
+          </ul>
+        </section>
+        <section class="card">
+          <h2>Number of Visits</h2>
+          <li class="visits"></li>
+        </section>
+      </div>
+      <div class="container">
+        <picture>
+          <img
+            class="grid-item1"
+            src="images/torreon0.webp"
+            alt="Torreon1"
+            loading="lazy"
+            width="400"
+            height="250"
+          />
+        </picture>
+        <picture>
+          <img
+            class="grid-item2"
+            src="images/torreon2.webp"
+            alt="Torreon2"
+            loading="lazy"
+            width="400"
+            height="250"
+          />
+        </picture>
+        <picture>
+          <img
+            class="grid-item3"
+            src="images/torreon3.webp"
+            alt="Torreon3"
+            loading="lazy"
+            width="400"
+            height="250"
+          />
+        </picture>
+        <picture>
+          <img
+            class="grid-item4"
+            src="images/torreon0.webp"
+            alt="Torreon4"
+            loading="lazy"
+            width="400"
+            height="250"
+          />
+        </picture>
+        <picture>
+          <img
+            class="grid-item5"
+            src="images/torreon2.webp"
+            alt="Torreon5"
+            loading="lazy"
+            width="400"
+            height="250"
+          />
+        </picture>
+        <picture>
+          <img
+            class="grid-item6"
+            src="images/torreon3.webp"
+            alt="Torreon6"
+            loading="lazy"
+            width="400"
+            height="250"
+          />
+        </picture>
+      </div>
+    </maind>
+    <footer>
+      <p>&#169;</p>
+      <p id="year1"></p>
+      <p>Antonio Melendez- WDD230 Project</p>
+      <p>Mexico &#127474; &#127485;</p>
+      <strong>Last Modified:</strong>
+      <div id="today1" class="step-reset step"></div>
+    </footer>
+    <script src="scripts/chamber.js"></script>
+  </body>
 </html>

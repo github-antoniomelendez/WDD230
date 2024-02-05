@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Torreon Chamber of Commerce</title>
+        <meta name ="description" content="Torreon Chamber of Commerce, because it is for the city of Torreon, Mexico.">
+        <meta name="author" content="Antonio Melendez-WDD 230-Web Frontend Development">
+
+        <meta
+        property="og:title"
+        content="Antonio Melendez-WDD 230-Web Frontend Development"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+        property="og:url"
+        content="https://github-antoniomelendez.github.io/wdd230/"
+        />
+        <meta
+        property="og:image"
+        content="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Plaza_de_Armas_de_Torre%C3%B3n.jpg/274px-Plaza_de_Armas_de_Torre%C3%B3n.jpg"
+        />
+
+        <link rel="stylesheet" href="styles/normalize.css" />
+        <link href="styles/base.css" rel="stylesheet" />
+        <link href="styles/larger.css" rel="stylesheet" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+
+        <link rel="icon" href="../favicon.ico" />
+    </head>
+    <body>
+        <header>
+            <img src="images/torreon-logo.png" alt="Torreon Chamber of Commerce" width="200" height="100">
+            <span>Torreon Chamber of Commerce</span>
+        </header>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="discover.html" title="Discover">Discover</a></li>
+                <li><a href="#" title="Directory">Directory</a></li>
+                <li><a href="join.html" title="Join" class="active">Join</a></li>
+            </ul>
+        </nav>
+        <h1>Chamber of Commerce Join Form</h1>
+        <main class="join">
+            <div id="formmessage"></div>
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label class="top">First Name* <input type="text" id="fname" name="fname" required ></label>
+                    <label class="top">Last Name* <input type="text" id="lname" name="lname" required ></label>
+                    <label class="top">Title or Position <input type="text" id="title" name="title" pattern="[A-Za-z-_-]{7,}"></label>
+                    <label class="top">Email* <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required placeholder="someone@gmail.com"></label>
+                    <label class="top">Mobile Phone Number* <input type="tel" id="phone" name="phone" required placeholder="1235551234"></label>
+                    <label class="top">Business/Organization's Name* <input type="text" id="business" name="business" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <label class="sbs"><input type="radio" id="audience1" name="audience" value="np membership" required > Non Profit Membership</label>
+                    <label class="sbs"><input type="radio" id="audience2" name="audience" value="bronze membership" required > Bronze Membership</label>
+                    <label class="sbs"><input type="radio" id="audience3" name="audience" value="silver membership" required > Silver Membership</label>
+                    <label class="sbs"><input type="radio" id="audience4" name="audience" value="gold membership" required > Gold Membership</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business/Organization Description</legend>
+                    <label class="top">Describe Your Business/Organization <input type="text" id="description" name="description" ></label>
+                    <label class="top">Timestamp <input type="datetime-local" id="timestamp" name="timestamp" ></label>
+                </fieldset>
+                <input type="submit" value="Become A Member" class="submitBtn">
+            </form>
+            <div class="membership">
+                <fieldset>
+                    <legend>Non Profit Membership</legend>
+                    <p>$0</p>
+                    <p>Member pricing on events, products and services; including Business Councils.</p>
+                    <p>Business listing in Chamber Online Directory.</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Bronze Memebership</legend>
+                    <p>$200</p>
+                    <p>All the benefits of a Non Profit Membership.</p>
+                    <p>+ Membership in the Economic Development Council.</p>
+                    <p>+ 2 catergory listings in Chamber Online Directory.</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Silver Memebership</legend>
+                    <p>$300</p>
+                    <p>All the benefits of a Bronze Membership.</p>
+                    <p>+ Membership in the Economic Development Council.</p>
+                    <p>+ Complemenatry table at legislative breakfast.</p>
+                    <p>+ Chamber member mailing labels.</p>
+                    <p>+ Membership for one additional branch or office.</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Gold Memebership</legend>
+                    <p>$500</p>
+                    <p>All the benefits of a Silver Membership.</p>
+                    <p>+ Membership in the Economic Development Council.</p>
+                    <p>+ Complementary team of four at Chamber's annueal golf tournament.</p>
+                    <p>+ $300 in spansorship credit.</p>
+                </fieldset>
+            </div>
+        </main>
+        <footer>
+            <p> &#169;</p>
+            <p id="year1"></p>
+            <p>Antonio Melendez- WDD230 Project</p>
+            <p>Mexico &#127474; &#127485;</p>
+            <strong>Last Modified:</strong>
+            <div id="today1" class="step-reset step"></div>
+        </footer>
+        <script src="scripts/chamber.js"></script>
+    </body>
+</html>
