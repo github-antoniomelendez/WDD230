@@ -199,3 +199,20 @@ nav .active {
     background-color: whitesmoke;
     border-radius: 5px;
 }
+
+/* css for weather card*/
+
+.card2 h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.card2 #description {
+    text-transform: capitalize;
+    margin: .3rem 0;
+}
+
+.card2 #temperature {
+    font-size: 2rem;
+    margin: .3rem 0;
+}

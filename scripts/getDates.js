@@ -83,9 +83,43 @@ if (
   (parseFloat(document.cookie.match(pattern1)?.[1]) || 0)
 );
 
-/*function getCelsius(fahrenheit) {
-	return (fahrenheit - 32) * (5/9);
+//weather code
+
+//select elements in document
+const myTown = document.querySelector('#town');
+const myDescription = document.querySelector('#description');
+const myTemperature = document.querySelector('#temperature');
+const myGraphic = document.querySelector('#graphic');
+
+//create required variables for url
+const myKey = "b9391e7aa1a3538c762bfd6297dbde24";
+const myLat = "25.54266";
+const myLong = "-103.42496";
+
+//construct url to call
+const myURL = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`
+
+async function apiFetch() {
+  try {
+      const response = await fetch (myURL);
+      if (response.ok) {
+          const data = await response.json ();
+          displayResults(data);
+      } else {
+          throw Error(await response.text());
+      }
+  } catch (error) {
+      console.log(error);
+  }
 }
 
-document.querySelector('#temp1').value = `${getCelsius(53).toFixed(1)}°C`;*/
+function displayResults(data) {
+  myTown.innerHTML = data.name
+  myDescription.innerHTML = data.weather[0].description
+  myTemperature.innerHTML = `${data.main.temp}&deg;F`
+  const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+  myGraphic.setAttribute('SRC', iconsrc)
+  myGraphic.setAttribute('alt', data.weather[0].description)
+}
 
+apiFetch();
