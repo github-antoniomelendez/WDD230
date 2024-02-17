@@ -1,3 +1,54 @@
+const json = ('members.json');
+const cards = document.querySelector('#cards');
+
+async function getMemberData() {
+  const response = await fetch(json);
+  const data = await response.json();
+  //console.table(data.prophets); // temporary testing of data retreival
+  displayMembers(data.companies); // note that we reference the prophets array of the JSON data object, not just the object
+}
+
+getMemberData();
+
+const displayMembers = (companies) => {
+  // card build code
+  companies.forEach((company) => {
+
+    let card = document.createElement("section");
+    let fullName = document.createElement("h2");
+    let address = document.createElement("p");
+    let phone = document.createElement("p");
+    let membership = document.createElement("p");
+    let website = document.createElement("p");
+    let icon = document.createElement("img");
+
+    //build h2 for the prophet's name
+    fullName.textContent = `${company.name}`;
+    //build p for birth info
+    address.textContent = `Address: ${company.address}`; 
+    phone.textContent = `Phone: ${company.phone}`;
+    membership.textContent = `Membership: ${company.membership}`;
+    website.textContent = `Website: ${company.website}`;
+    //build image portrait
+    icon.setAttribute('src', company.icon);
+    icon.setAttribute('alt', `icon of ${company.name}`);
+    icon.setAttribute('loading', 'lazy');
+    icon.setAttribute('width', '300');
+    icon.setAttribute('height', '300');
+
+    //append elements
+    card.appendChild(fullName);
+    card.appendChild(address);
+    card.appendChild(phone);
+    card.appendChild(membership);
+    card.appendChild(website);
+    card.appendChild(icon);
+
+    cards.appendChild(card);
+
+  });
+}
+
 // hamburger button
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
@@ -83,9 +134,3 @@ if (
   (parseFloat(document.cookie.match(pattern1)?.[1]) || 0)
 );
 
-
-/*function getCelsius(fahrenheit) {
-	return (fahrenheit - 32) * (5/9);
-}
-
-document.querySelector('#temp1').value = `${getCelsius(53).toFixed(1)}°C`;*/

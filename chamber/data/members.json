@@ -1,0 +1,60 @@
+{
+    "companies" : [
+      {
+        "name" : "San Felipe Flower Shop",
+        "address" : "Main Street 234 South",
+        "phone" : "8717-218290",
+        "membership" : "Bronze",
+        "icon" : "floreria_san_felipe.webp",
+        "website" : "https://www.floreriasanfelipe.com.mx/"
+      },
+      {
+        "name" : "Ranitas Gorditas",
+        "address" : "Calle Colon 875 North",
+        "phone" : "8718-225566",
+        "membership" : "Bronze",
+        "icon" : "",
+        "website" : "http://ranitasgorditas.com/"
+      },
+      {
+        "name" : "Galerias Laguna",
+        "address" : "Periferico Street 345 West",
+        "phone" : "8717-959896",
+        "membership" : "Silver",
+        "icon" : "",
+        "website" : "https://www.galerias.com/GaleriasLaguna"
+      },
+      {
+        "name" : "LALA",
+        "address" : "Cuauhtemoc Street 989 North 200 South",
+        "phone" : "8717-292452",
+        "membership" : "Gold",
+        "icon" : "",
+        "website" : "https://www.lala.com.mx/"
+      },
+      {
+        "name" : "Soriana Supermarket",
+        "address" : "Hidalgo 124 South",
+        "phone" : "8718-963696",
+        "membership" : "Silver",
+        "icon" : "",
+        "website" : "https://www.soriana.com"
+      },
+      {
+        "name" : "Peñoles",
+        "address" : "Revolucion 123 North",
+        "phone" : "8712-365236",
+        "membership" : "Non-Profit",
+        "icon" : "",
+        "website" : "https://www.penoles.com.mx/"
+      },
+      {
+        "name" : "Santos Laguna",
+        "address" : "Constitucion Street 457 East 644 North",
+        "phone" : "8712-852588",
+        "membership" : "Gold",
+        "icon" : "",
+        "website" : "https://www.clubsantos.mx/"
+      }
+    ]
+}
