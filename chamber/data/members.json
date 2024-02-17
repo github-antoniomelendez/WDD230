@@ -13,7 +13,7 @@
         "address" : "Calle Colon 875 North",
         "phone" : "8718-225566",
         "membership" : "Bronze",
-        "icon" : "",
+        "icon" : "https://github-antoniomelendez.github.io/wdd230/chamber/images/ranitas.webp",
         "website" : "http://ranitasgorditas.com/"
       },
       {
@@ -21,7 +21,7 @@
         "address" : "Periferico Street 345 West",
         "phone" : "8717-959896",
         "membership" : "Silver",
-        "icon" : "",
+        "icon" : "https://github-antoniomelendez.github.io/wdd230/chamber/images/galerias.webp",
         "website" : "https://www.galerias.com/GaleriasLaguna"
       },
       {
@@ -29,7 +29,7 @@
         "address" : "Cuauhtemoc Street 989 North 200 South",
         "phone" : "8717-292452",
         "membership" : "Gold",
-        "icon" : "",
+        "icon" : "https://github-antoniomelendez.github.io/wdd230/chamber/images/lala.webp",
         "website" : "https://www.lala.com.mx/"
       },
       {
@@ -37,7 +37,7 @@
         "address" : "Hidalgo 124 South",
         "phone" : "8718-963696",
         "membership" : "Silver",
-        "icon" : "",
+        "icon" : "https://github-antoniomelendez.github.io/wdd230/chamber/images/soriana.webp",
         "website" : "https://www.soriana.com"
       },
       {
@@ -45,7 +45,7 @@
         "address" : "Revolucion 123 North",
         "phone" : "8712-365236",
         "membership" : "Non-Profit",
-        "icon" : "",
+        "icon" : "https://github-antoniomelendez.github.io/wdd230/chamber/images/pe%C3%B1oles.webp",
         "website" : "https://www.penoles.com.mx/"
       },
       {
@@ -53,7 +53,7 @@
         "address" : "Constitucion Street 457 East 644 North",
         "phone" : "8712-852588",
         "membership" : "Gold",
-        "icon" : "",
+        "icon" : "https://github-antoniomelendez.github.io/wdd230/chamber/images/santos.webp",
         "website" : "https://www.clubsantos.mx/"
       }
     ]
