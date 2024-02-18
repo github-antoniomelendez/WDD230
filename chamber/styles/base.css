@@ -372,3 +372,87 @@ nav .active {
     background-color: whitesmoke;
     border-radius: 5px;
 }
+
+section {
+    margin: 0.25rem auto;
+    padding: 0.35rem;
+    flex-direction: column;
+    background-color: rgba(0,0,0,.3);
+    border: 2px solid rgba(0,0,0,.3);
+    border-radius: 20px;
+    align-items: center;
+    
+    
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
+  /* css for grid/list showing*/
+  
+.menu {
+	margin: 1rem auto;
+	border: 2px solid rgba(0, 0, 0, 0.3);
+	padding: 0.5rem;
+	background-color: rgb(33, 46, 39);
+    border-radius: 20px;
+	text-align: center;
+}
+
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.grid section {
+	text-align: center;
+}
+
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+	background-color: #bed;
+}
