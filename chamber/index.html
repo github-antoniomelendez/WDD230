@@ -43,7 +43,7 @@
   <body>
     <header>
       <img
-        src="images/torreon-logo.png"
+        src="images/torreon-logo.webp"
         alt="Torreon Chamber of Commerce"
         width="200"
         height="100"
@@ -61,11 +61,16 @@
       </ul>
     </nav>
     <main>
+      <div class="banner">
+        <div>
+          <h4>You can attend our Chamber of Commerce Meeting Wednesday at 7:00 p.m.</h4>
+        </div>
+      </div>
       <div class="hero">
         <picture>
           <source srcset="images/torreon1.webp" media="(max-width: 400px)" />
           <img
-            src="images/torreon1.jpg"
+            src="images/torreon1.webp"
             alt="torreon"
             width="960"
             height="480"
@@ -95,7 +100,18 @@
         </section>
         <section class="card3">
           <h2>Spotlights</h2>
-          <ul></ul>
+          <div class="menu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+          </div>
+          <div>
+          <article class="grid">
+          <div id="cards"></div>
+            <section>
+    
+            </section>
+          </article>
+          </div>
         </section>
         <section class="card">
           <h2>Current Events</h2>

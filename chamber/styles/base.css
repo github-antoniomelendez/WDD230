@@ -19,6 +19,7 @@ h1 {
     width: 100%;
     height: auto;
     display: block;
+    justify-content: center;
 }
 
 .hero picture {
@@ -239,24 +240,60 @@ maind {
     box-shadow: 0 0 50px #333;
 }
 
+.grid-item1:hover {
+    border: 3px solid #333;
+    border-radius: 20px;
+	color: #333;
+}
+
 .grid-item2 {
     border-radius: 15px 150px;
+}
+
+.grid-item2:hover {
+    border: 3px solid #333;
+    border-radius: 15px 150px;
+	color: #333;
 }
 
 .grid-item3 {
     opacity: .5;
 }
 
+.grid-item3:hover {
+    border: 3px solid #333;
+    border-radius: 20px;
+	color: #333;
+}
+
 .grid-item4 {
     filter: saturate(10%);
+}
+
+.grid-item4:hover {
+    border: 3px solid #333;
+    border-radius: 20px;
+	color: #333;
 }
 
 .grid-item5 {
     filter: blur(1px) grayscale(80%);
 }
 
+.grid-item5:hover {
+    border: 3px solid #333;
+    border-radius: 20px;
+	color: #333;
+}
+
 .grid-item6 {
     mix-blend-mode: darken;
+}
+
+.grid-item6:hover {
+    border: 3px solid #333;
+    border-radius: 20px;
+	color: #333;
 }
 
 .card2 {
@@ -455,4 +492,13 @@ section {
 
 .list section:nth-child(even) {
 	background-color: #bed;
+}
+
+.banner {
+    background-color: #bed;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.3rem;
+
 }
